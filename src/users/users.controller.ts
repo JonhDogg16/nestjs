@@ -17,8 +17,6 @@ export class UsersController {
 
     @Get(':id')
     getUser(@Param('id', ParseIntPipe) id: number) {
-        console.log(id);
-        console.log(typeof (id));
         return this.usersService.getUser(id);
     }
 

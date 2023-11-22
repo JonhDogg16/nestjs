@@ -16,7 +16,7 @@ import { TypeOrmModule }from '@nestjs/typeorm'
       database: 'nestjs',
       entities: [__dirname + '/**/*.entity{.ts,.js}'],
       synchronize: true,
-      dropSchema: true
+      dropSchema: false
     }),
     UsersModule,
     PostsModule],
